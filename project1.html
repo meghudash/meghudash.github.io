@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8"/>
+ <title>VISIT KENYA</title>
+ <link rel="stylesheet" href="project1styles.css"/>
+ <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+   <div class="nav-wrapper">
+     <div class ="left-side">
+       <div class="nav-link-wrapper active-nav-link">
+         <a href="project1.html"> Home </a>
+       </div>
+     </div>
+
+     <div class ="right-side">
+       <div class="brand">
+         <div></div>
+       </div>
+     </div>
+   </div>
+   <div class="content-wrapper">
+     <div class="header">
+       <h1><a href="project1.html">VISIT KENYA</a></h1>
+       <img id="logo"src="C:\Users\KIIT\Downloads\ke-03.png"alt="logo" height="70px" width="100px">
+     </div>
+   </div>
+   <span id="cap"> The perfect place to answer Africa’s call of the wild </span>
+ </div>
+<figure>
+  <figcaption class="caption"> www.dadamiansafaris.com </figcaption>
+</figure>
+<article>
+  <section>
+    <p class="intro">Vast savannahs peppered with immense herds of wildlife. Snow-capped equatorial mountains.
+      Traditional peoples who bring soul and colour to the earth. Welcome to Kenya.</p>
+      <br>
+      <br>
+      <p class="intro_one">When you think of Africa, you’re probably thinking of Kenya.
+         It’s the lone acacia silhouetted on the savannah against a horizon stretching into eternity.
+          It’s the snow-capped mountain almost on the equator and within sight of harsh deserts.
+           It’s the lush, palm-fringed coastline of the Indian Ocean, it’s the Great Rift Valley that once threatened to tear the continent asunder,
+           and it’s the dense forests reminiscent of the continent’s heart. In short, Kenya is a country of epic landforms that stir our deepest longings
+            for this very special continent.</p>
+            <div class="read-more"><a target="_blank" href="https://www.nationalgeographic.com/travel/destinations/africa/kenya/">Read more</a></div>
+  </section>
+  <br>
+  <br>
+  <div class="video">
+    <span><h3>Featured Video</h3></span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gTEXJsw62iU"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+</article>
+<div>
+  <h3 class="mvd">Must Visit Destinations</h3>
+    <section class="grid-1">
+      <div class="portfolio-item-wrapper">
+        <div class="masai">
+          <span><a href="https://www.go2africa.com/destinations/masai-mara/why-go" target="_blank" >Masai Mara National Reserve</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="mvd-two amboseli">
+          <span><a href="https://www.go2africa.com/destinations/amboseli/why-go" target="_blank">amboseli National park</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="mvd-three mtkenya">
+          <span><a href="http://www.kws.go.ke/content/mount-kenya-national-park-reserve" target="_blank">mount kenya National park</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="mvd-four nakuru">
+          <span><a href="https://www.go2africa.com/destinations/lake-nakuru/why-go" target="_blank">lake nakuru National park</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="mvd-five Mombasa">
+          <span><a href="https://www.go2africa.com/destinations/kenya-beaches/why-go" target="_blank">Mombasa</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="mvd-six nairobi">
+          <span><a href="https://magicalkenya.com/places-to-visit/cities/nairobi/" target="_blank"> Nairobi </a> </span>
+        </div>
+      </div>
+    </section>
+</div>
+<div>
+  <h3 class="explore">Explore</h3>
+  <div class="content">
+    <div class="portfolio-items-wrapper">
+      <div class="cuisine">
+        <span class="text"><a href="http://www.kenyasafari.com/food-of-kenya.html" target="_blank" >cuisine</a></span>
+      </div>
+    </div>
+    <div class="portfolio-items-wrapper">
+      <div class="Nature">
+        <span class="text"><a href="http://www.kenyasafari.com/food-of-kenya.html" target="_blank" >Nature and WildLife</a></span>
+      </div>
+    </div>
+    <div class="portfolio-items-wrapper">
+      <div class="african-art">
+        <span class="text"><a href="https://theculturetrip.com/africa/kenya/articles/kenya-s-10-must-see-contemporary-art-galleries-from-nairobi-to-mombasa/" target="_blank" >Afrian art</a></span>
+      </div>
+    </div>
+    <div class="portfolio-items-wrapper">
+      <div class="Shopping">
+        <span class="text"><a href="https://nairobifashionhub.co.ke/top-20-shopping-malls-in-kenya/" target="_blank" >Shopping</a></span>
+      </div>
+    </div>
+    <div class="portfolio-items-wrapper">
+      <div class="Activities">
+        <span class="text"><a href="https://gobackpacking.com/travel-guides/kenya/things-to-do-activities-attractions/" target="_blank" >Activities</a></span>
+      </div>
+    </div>
+
+  </div>
+  </section>
+  <br>
+  <br>
+ <footer>Meghu Dash &copy 2020
+ <span id="contact">Email me:meghudash@gmail.com</span></footer>
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+
+  const portfolioItemss = document.querySelectorAll('.portfolio-items-wrapper');
+
+  portfolioItemss.forEach(portfolioItemm => {
+    portfolioItemm.addEventListener('mouseover', () => {
+      console.log(portfolioItemm.childNodes[1].classList)
+      portfolioItemm.childNodes[1].classList.add('zoom-in');
+    });
+
+    portfolioItemm.addEventListener('mouseout', () => {
+      console.log(portfolioItemm.childNodes[1].classList)
+      portfolioItemm.childNodes[1].classList.remove('zoom-in');
+    });
+  });
+
+
+</script>
+
+</html>

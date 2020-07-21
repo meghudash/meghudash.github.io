@@ -1,0 +1,343 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cardo', serif;
+  margin: 0px;
+  background-color: #ffdecf;
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Oswald', sans-serif;
+ text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+}
+.container{
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5ada032c25bf0298abb776fe/1529947284131-3SY6P6IPLQQUOOFLSZ4E/ke17ZwdGBToddI8pDm48kPXIQ33rvod2g97CBYImIl57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0lCYWGxfdB_uf1_ERfebHZ7Mop4nh9jkrAGoa293SGTDCY7uu81X63yAWSw8L_F9mQ/masai+mara+sunset+safari?format=2500w);
+  background-size: cover;
+  height:560px;
+  width: 1290px;
+  background-position: center;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.brand{
+  color: black;
+  font-style: italic;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black;
+}
+
+.nav-link-wrapper a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
+
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: grey;
+}
+
+.caption {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 14px;
+  margin-right: 150px;
+  padding: 10px;
+  position: relative;
+  bottom:70px;
+  width: 60%;
+  background-color:transparent;
+  color:white;
+  opacity:0.75;
+}
+#cap{
+  font-family:sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #ba7967;
+  margin-left: 250px;
+  position: relative;
+  top: 150px;
+  background-color: orange;
+  opacity: 0.5;
+}
+
+.header{
+  text-align:center;
+  font-family:"Garamond", sans-serif;
+  letter-spacing: 2px;
+
+}
+.header a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.content-wrapper{
+  position: relative;
+  bottom: 50px;
+}
+#first{
+  position: relative;
+  bottom: 150px;
+  right: 35px;
+}
+footer{
+  text-align: center;
+  font-family: sans-serif;
+  font-style: italic;
+  background-color: grey;
+  opacity: 0.5;
+  position: relative;
+}
+#contact{
+  position:absolute;
+  right: 40px;
+}
+#logo{
+  opacity: 0.5;
+  position: relative;
+  left:50px;
+  bottom:80px;
+}
+@keyframes getbigger {
+  from {
+    height:390px;
+  }
+  to {
+    height:450px;
+  }
+}
+article{
+  display: block;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+section .intro{
+  font-size: 2em;
+  color: grey;
+  text-align: center;
+}
+.intro_one{
+  font-size: 19px;
+  text-align: justify;
+  font-style: normal;
+  font-family: sans-serif;
+  color: black;
+  line-height: 35px;
+}
+.read-more a{
+      height: 30px;
+      width: 60px;
+      background-color: Sienna;
+      color: grey;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bolder;
+}
+.read-more a:hover{
+  color: black;
+
+}
+.read-more{
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.read-more :hover {
+  border-bottom: 1px solid black;
+}
+h3 {
+  color: #41292C;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.mvd{
+  text-align: center;
+}
+.masai{
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 190px;
+  width: 336px;
+  padding: 20px;
+  margin: 50px;
+  background-image: url(https://centurion-magazine.com/media/6313/safari-angama-mara-elephant.jpg?progressive=true&encoder=freeimage&quality=75&width=336&height=190&mode=crop);
+}
+.amboseli{
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 190px;
+  width: 336px;
+  padding: 20px;
+  margin: 0px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg/220px-Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg);
+}
+.mtkenya{
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 190px;
+  width: 336px;
+  padding: 20px;
+  margin: 0px;
+
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipNKfMmH734lrU844IK60VoZpvZialjk8X5iNYSo=w336-h190-n-k-no);
+}
+.nakuru{
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 190px;
+  width: 336px;
+  padding: 20px;
+  margin: 50px;
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipORyFEUi0GCSUFvR-EYLZoC5_YtUHECJZrFumsW=w336-h190-n-k-no);
+}
+.Mombasa{
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 190px;
+  width: 336px;
+  padding: 20px;
+  margin: 0px;
+  background-image: url(https://lh5.googleusercontent.com/p/AF1QipNtPNDz4Pvz7H_EfsTnk5Hf4JA-RjOQ1iSOgtlG=w336-h190-n-k-no);
+}
+.nairobi{
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  height: 190px;
+  width: 336px;
+  padding: 20px;
+  margin: 0px;
+  background-image: url(https://lh5.googleusercontent.com/proxy/Bm03J8Q8JAkOvX0Me_XUGdQMAiCO2i3equ43CS0bfKkXasA7IVZSivx2jq7Ai2-x9xQ8ppKT9baXCpstBeWn6f7dnIx_Nby97H1N16du10idOwmkkxRhNS2FeSg0k7Bfw5tlx0F2W_b80fujqnbX2RC35b_zfjd5K--zbF9tWwj0=w336-h190-n-k-no);
+}
+
+.grid-1{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.portfolio-item-wrapper, .portfolio-items-wrapper {
+  position: relative;
+}
+.image-blur {
+  transition: 1s;
+  filter: brightness(30%);
+}
+.zoom-in{
+  animation-name: getbigger;
+  animation-duration: 1s;
+}
+.explore{
+  text-align: center;
+}
+.content{
+  display:flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.text{
+  text-align: center;
+  background-color: white;
+  opacity: 0.7;
+  font-weight: bolder;
+
+}
+.cuisine{
+  background-image: url(https://www.clker.com/cliparts/b/6/3/f/14986307772122899182kenyan-food-dishes.hi.png);
+  background-size: cover;
+  height:390px;
+  width:250px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.Nature{
+  background-image: url(https://seoimgak.mmtcdn.com/blog/sites/default/files/images/Masai-Mara.jpg);
+  background-size: cover;
+  height:390px;
+  width:250px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.african-art{
+  background-image: url(https://i.pinimg.com/originals/59/db/df/59dbdfd70a095571201f5e667f09ce7f.jpg);
+  background-size: cover;
+  height:390px;
+  width:250px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.Shopping {
+  background-image: url(https://i0.wp.com/nairobifashionhub.co.ke/wp-content/uploads/2018/01/Nairobi-Fashion-Hub-shopping-mall-kenya-Top-20.jpg?fit=870%2C481&ssl=1);
+  background-size: cover;
+  height:390px;
+  width:250px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.Activities {
+  background-image: url(https://gobackpacking.com/wp-content/uploads/2020/02/Beach-resort-in-Mombasa-Kenya-1024x681.jpg);
+  background-size: cover;
+  height:390px;
+  width:250px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
